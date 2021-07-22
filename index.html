@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Expressions and switch Cases</title>
+</head>
+<body>
+    <h1>Expressions and Switch Cases</h1>
+    <script>
+    // define our variables
+    let x = 100;
+    let y = "100";
+    let z = 2000;
+
+    //simple conditionals
+    if (x === y)
+        {
+            console.log("x is equal to y");
+        }
+        else
+        {
+            console.log("x is NOT equal to y");
+        }
+
+    // a little advanced version
+    if (z >= x)
+        {
+            console.log("z is greater than or equal to x");
+        }
+    else if (z <= x)
+        {
+            console.log("z is less than x");
+        }
+    else   
+        {
+            console.log("The other message");
+        }
+
+    // Conditional input, made 2 code block, and then compare them! This is the first variable im setting.
+    let secretName = "Marco";
+
+    // Ask to guess the secret number, this is the second variabe im setting
+    let answer = prompt("Guess the secret name").toUpperCase();
+
+    // Check the answer, now using those 2 previously SET variable to use in this function \/
+    if (answer === secretName.toUpperCase())
+        {
+            alert(" You got it cowboy!");
+        }
+        else 
+        {
+            alert(" Try again mane!");
+        }
+
+    // 
+
+    </script>
+    
+</body>
+</html>

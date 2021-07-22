@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Practice</h1>
+    <script>
+        //Basic Array
+            let nameList = ["Marcos", "Bob", "Tiana", "Duck"];
+            let ageList = [12,23,[22,45,60],30,55]
+            // Print it out, they will be given a number associated with the item
+            console.log(nameList); // Use console log to print text to console
+
+        //Print the 2nd name in my array
+            console.log(" The 2nd name in the list is " + nameList[1]);
+            console.log(" The 1st name in the list is " + nameList[0]); // the [ ] plus the number will list that item, they start at 0 
+            console.log(" Te first term in the second array is " + ageList[2][0]);
+
+        
+    // Combine arrays w/ loops to process the array
+
+        // For loops, use when you know how many times you want it to loop when something is false.
+            for (let i = 0; i < 4; i++)
+            {
+             // print the next element for the string
+                console.log(nameList[i]); // the [i] is, as stated the 0 value item in the list, and with the i++ it lists all those items as long as its before 4 as the logic of the for loop states
+            }
+        
+        // While loops, use when you dont know. Just keep doing as long as its false.
+            let names = [];
+            let notDoneEnteringNames = true;
+            while (notDoneEnteringNames)
+            {
+            //enter a name
+            let newNameEntered = prompt("Enter the next name or X to quit . . . ");
+            if (newNameEntered === "X")
+                {
+                notDoneEnteringNames = false;
+                }
+            else
+                {
+                names.push(newNameEntered); // add new name to the array
+                }
+            }
+            // message
+                console.log(" Done entering names . . . ");
+                
+                //Print them all out
+             for (let i = 0; i < names.length ; i++)
+            {
+                // print the next elemtn from the array
+                console.log(names[i]); 
+            }
+
+            // done processing
+                console.log(" Done listing names . . . ");
+
+    // Do-While loops
+
+
+    
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
